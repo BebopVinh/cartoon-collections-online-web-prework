@@ -6,8 +6,8 @@ end
 
 def summon_captain_planet(array)
   array_2 = []
-  array.each do |element|
-    array_2 << element
+  array.each do |word|
+    array_2 << "#{word.capitalize}!"
   end
   return array_2
 end
