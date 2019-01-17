@@ -21,8 +21,7 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.find do |ingredient|
-    cheese_types.any? |cheese|
-      cheese == ingredient
+    ingredient == "cheddar" || ingredient == "gouda" || ingredient == "camembert"
     end
   end
 end
